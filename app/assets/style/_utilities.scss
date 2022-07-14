@@ -1,0 +1,19 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@each $name,$value in $spacers {
+  .mt-#{$name} {
+    margin-top: $value;
+  }
+  .mb-#{$name} {
+    margin-bottom: $value;
+  }
+  .mr-#{$name} {
+    margin-right: $value;
+  }
+  .ml-#{$name} {
+    margin-left: $value;
+  }
+}
